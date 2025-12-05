@@ -47,8 +47,8 @@
         };
         packages = {
           inherit (pkgs)
-            arm-embedded-toolchain
-            boost153
+            # arm-embedded-toolchain
+            # boost153
             coredevices
             pdc-sequencer
             pdc_tool

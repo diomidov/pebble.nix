@@ -34,10 +34,10 @@ stdenv.mkDerivation {
   version = "2.5.0-pebble6";
 
   src = fetchFromGitHub {
-    owner = "pebble-dev";
+    owner = "coredevices";
     repo = "qemu";
-    rev = "615110afaf9fd48435263a340e0ceccfe2d52997";
-    hash = "sha256-tblgseY4g/5Hyor3dvGILGw5ECgtfDoyjkRcQrTVr24=";
+    rev = "606b793bbb79fa4105dc2be6a8d43939bb2d342e";
+    hash = "sha256-9HlnlT0gIzAf7/M9D47JK7GKhYM1EMVKPGkbVBZIhZ4=";
     fetchSubmodules = true;
   };
 

@@ -46,13 +46,15 @@ let
 in
 python3Packages.buildPythonPackage rec {
   pname = "pebble-tool";
-  version = "5.0.5";
+  version = "5.0.16";
+  format = "pyproject";
+  dontCheckRuntimeDeps = true;
 
   src = fetchFromGitHub {
     owner = "coredevices";
     repo = "pebble-tool";
     tag = "v${version}";
-    hash = "sha256-z0sZGQoMZLVYUP1ZC40TfuSj0P0QE0i/V1Jy+lM2sA4=";
+    hash = "sha256-2Id+6C5flo9877lI6vRRgaFIhaD4XCWdCLStVMwvsHM=";
   };
 
   nativeBuildInputs = [ makeWrapper ];
@@ -77,8 +79,9 @@ python3Packages.buildPythonPackage rec {
     six
     sourcemap
     websocket-client
+    websockify
     wheel
-
+    hatchling
     freetype
   ];
 
